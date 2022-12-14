@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #clr{
+            height: 100px;
+            width: 100px;
+    
+        }
+    </style>
+
+</head>
+<body>
+    <div id="clr"></div>
+    <script>
+        
+        setInterval(function (){
+            let arr=["red","blue","green","yellow"];
+            var n=Math.random()*4;
+            // console.log(n);
+            let c=arr[Math.floor(n)];
+            document.getElementById("clr").style.backgroundColor=c;
+        },1000);
+
+    </script>
+</body>
+</html>

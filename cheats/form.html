@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <h2>Student Information</h2>
+    <div class="container">
+        <form action="/report.php" name="myform" onsubmit="return validateForm()" method="post">
+            Name: <br><input type="text" name="name" id="name" value=""> <span id="error1"> </span><br>
+            Roll No.: <br><input type="text" name="roll" id="roll"> <span id="error2"></span> <br>
+            Email: <br><input type="text" name="email" id="email"> <span id="error3"></span> <br>
+            Age: <br><input type="text" name="age" id="age"> <br>
+            Gender:<span id="error4"></span> <br>
+            <input type="radio" name="gender" class="gender" value="male">Male<br>
+            <input type="radio" name="gender" class="gender" value="female">Female<br>
+            <input type="radio" name="gender" class="gender" value="other">Other<br>
+            Societies: <span id="error5"></span> <br>
+            <input type="checkbox" name="society" class="society" value="kalamkaar">Kalamkaar <br>
+            <input type="checkbox" name="society" class="society" value="rhapsody">Rhapsody <br>
+            <input type="checkbox" name="society" class="society" value="Raaga">Raaga <br>
+            Course: <br>
+            <select name="course" id="course">
+                <option value="cs">Computer Science</option>
+                <option value="math">Mathematics</option>
+                <option value="physics">Physics</option>
+            </select> <br>
+            Address : <br><input type="text" name="add" id="add"> <br>
+            Photo : <input type="file" name="photo" id="photo" value="photo"> <br>
+            <input type="reset" id="reset" value="Reset">
+            <input type="submit" id="submit" value="Submit">
+        </form>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
