@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Document</title>
+<style>
+* {
+margin: 0;
+padding: 0;
+}
+#division1 {
+width: 100vw;
+height: 100vh;
+}
+#form {
+display: block;
+width: fit-content;
+margin: auto;
+}
+</style>
+</head>
+<body>
+<div id="division1">
+<div id="form">
+<label for="html" id="lab">Name</label><br />
+<input type="text" id="html" name="fav_language" />
+</div>
+</div>
+<script>
+let arr = [
+"0",
+"1",
+"2",
+"3",
+"4",
+"5",
+"6",
+"7",
+"8",
+"9",
+"A",
+"B",
+"C",
+"D",
+"E",
+"F",
+];
+let c = "#";
+setInterval(function () {
+for (let i = 0; i < 6; i++) {
+let num = Math.floor(Math.random() * 16);
+c += arr[num];
+}
+document.getElementById("division1").style.backgroundColor = c;
+c = "#";
+}, 2000);
+setTimeout(function () {
+document.getElementById("lab").style.fontSize = "50px";
+}, 3000);
+</script>
+</body>
+</html>

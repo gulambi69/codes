@@ -1,0 +1,29 @@
+#border{
+    border: 2px solid;
+}
+#v{
+    background-color: aquamarine;
+    font-style: italic;
+    font-size: larger;
+}
+.r{
+    background-color: darkblue;
+    font-style: italic;
+    font-size: larger;
+}
+#aqua{
+    background-color: aqua;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.light{
+    background-color: lightskyblue;
+    color: green;
+}
+#text{
+    font-style: italic;
+}
+.bold{
+    font-weight: bold;
+}

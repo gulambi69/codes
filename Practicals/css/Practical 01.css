@@ -1,0 +1,15 @@
+.image{
+    border:2px; border-width:2px; border-style: solid; border-color: red; padding:0px; margin: 10px 30px 30px 10px;
+} 
+a:active{
+    font-size: 3.5em;
+}
+.heading{
+    color: darkblue;
+}
+#font-family{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#bg-color{
+    background-color: aqua;
+}
